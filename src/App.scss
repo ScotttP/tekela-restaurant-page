@@ -1,0 +1,114 @@
+$navbar-background-color: #242121;
+$navbar-hover-color: #3f3939;
+$navbar-hover-color2: #75da23;
+$navbar-text-color: #fff;
+$navbar-font-size: 1.2em;
+$transition-hover: 0.3s;
+
+%border-bottom {
+	border-bottom: 3px solid $navbar-background-color;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#navbarContainer {
+	background: $navbar-background-color;
+	height: fit-content;
+	min-height: 100px;
+	color: $navbar-text-color;
+
+	a {
+		text-decoration: none;
+		color: $navbar-text-color;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#logo {
+		margin-left: 30px;
+	}
+}
+
+.mainNavbar {
+	list-style-type: none;
+	display: none;
+	height: 100%;
+}
+
+.mainNavbar {
+	li {
+		text-align: center;
+	}
+}
+
+.logo {
+	display: inline-block;
+	font-size: 22px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.navbarToggle {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 24px;
+}
+
+.active {
+	display: block;
+}
+
+@media screen and (min-width: 768px) {
+	#navbarContainer {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+		height: 70px;
+		align-items: center;
+
+		li {
+			text-align: center;
+		}
+	}
+
+	.mainNavbar {
+		display: flex;
+		margin-right: 30px;
+		flex-direction: row;
+		justify-content: flex-end;
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
+			border-bottom: 3px solid $navbar-background-color;
+			transition: $transition-hover;
+		}
+		li:hover {
+			background-color: $navbar-hover-color;
+			border-bottom: 3px solid $navbar-hover-color2;
+			color: $navbar-hover-color2;
+		}
+	}
+
+	.navbarLinks {
+		margin: 0 10px 0 10px;
+		min-width: 58px;
+	}
+
+	.logo {
+		margin-top: 0;
+	}
+
+	.navbarToggle {
+		display: none;
+	}
+}
