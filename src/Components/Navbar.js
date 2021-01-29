@@ -16,10 +16,13 @@ const Navbar = () => {
 				id="js-navbar-toggle"
 				onClick={() => toggleMenuDisplay()}
 			>
-				<FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+				<FontAwesomeIcon
+					style={{ color: "#75da23" }}
+					icon={faBars}
+				></FontAwesomeIcon>
 			</span>
 			<Link to="/Home" id="logo">
-				Te'kela Mexican Cocina y Cantina
+				Tékēla Mexican Cocina y Cantina
 			</Link>
 
 			<ul className="mainNavbar" id="jsMenu">

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
 $navbar-background-color: #242121;
 $navbar-hover-color: #3f3939;
 $navbar-hover-color2: #75da23;
@@ -18,8 +20,9 @@ $transition-hover: 0.3s;
 #navbarContainer {
 	background: $navbar-background-color;
 	height: fit-content;
-	min-height: 100px;
+	min-height: 60px;
 	color: $navbar-text-color;
+	font-family: "Architects Daughter", sans-serif;
 
 	a {
 		text-decoration: none;
@@ -28,9 +31,15 @@ $transition-hover: 0.3s;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transition: $transition-hover;
+	}
+	a:hover {
+		color: $navbar-hover-color2;
 	}
 	#logo {
 		margin-left: 30px;
+		font-size: 1.4em;
+		width: fit-content;
 	}
 }
 
@@ -38,19 +47,9 @@ $transition-hover: 0.3s;
 	list-style-type: none;
 	display: none;
 	height: 100%;
-}
-
-.mainNavbar {
 	li {
 		text-align: center;
 	}
-}
-
-.logo {
-	display: inline-block;
-	font-size: 22px;
-	margin-top: 10px;
-	margin-left: 20px;
 }
 
 .navbarToggle {
@@ -71,7 +70,7 @@ $transition-hover: 0.3s;
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 0;
-		height: 70px;
+		height: 100px;
 		align-items: center;
 
 		li {
@@ -95,7 +94,6 @@ $transition-hover: 0.3s;
 		li:hover {
 			background-color: $navbar-hover-color;
 			border-bottom: 3px solid $navbar-hover-color2;
-			color: $navbar-hover-color2;
 		}
 	}
 
