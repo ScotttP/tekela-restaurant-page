@@ -121,17 +121,19 @@ $transition-hover: 0.3s;
 
 #footer {
 	height: fit-content;
-	min-height: 100px;
+	min-height: 150px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	background: $navbar-background-color;
 	color: $navbar-text-color;
+	padding: 10px;
 	#socialsContainer {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		align-items: flex-end;
-		padding: 10px;
+
+		min-height: 100px;
 
 		#socialsList {
 			display: flex;
@@ -145,9 +147,23 @@ $transition-hover: 0.3s;
 				cursor: pointer;
 			}
 		}
-		h3 {
-			margin-right: 5px;
-		}
+	}
+	.footerDivs {
+		line-height: 1.75em;
+		height: fit-content;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#footer {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	#socialsContainer {
+		align-items: flex-start;
+	}
+	.footerDivs {
+		padding: 10px 5px 10px 5px;
 	}
 }
 
