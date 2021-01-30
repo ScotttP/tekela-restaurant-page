@@ -11,19 +11,21 @@ const Navbar = () => {
 
 	return (
 		<nav id="navbarContainer">
-			<span
-				class="navbarToggle"
-				id="js-navbar-toggle"
-				onClick={() => toggleMenuDisplay()}
-			>
-				<FontAwesomeIcon
-					style={{ color: "#75da23" }}
-					icon={faBars}
-				></FontAwesomeIcon>
-			</span>
-			<Link to="/Home" id="logo">
-				Tékēla Mexican Cocina y Cantina
-			</Link>
+			<div id="logoAndToggleDiv">
+				<Link to="/Home" id="logo">
+					Tékēla
+				</Link>
+				<span
+					className="navbarToggle"
+					id="js-navbar-toggle"
+					onClick={() => toggleMenuDisplay()}
+				>
+					<FontAwesomeIcon
+						style={{ color: "#75da23" }}
+						icon={faBars}
+					></FontAwesomeIcon>
+				</span>
+			</div>
 
 			<ul className="mainNavbar" id="jsMenu">
 				<li>

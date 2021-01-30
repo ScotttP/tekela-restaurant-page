@@ -8,6 +8,14 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 
 const App = () => {
+	window.onscroll = () => {
+		const navbarContainer = document.getElementById("navbarContainer");
+		if (window.pageYOffset >= 65) {
+			navbarContainer.classList.add("sticky");
+		} else {
+			navbarContainer.classList.remove("sticky");
+		}
+	};
 	return (
 		<Router basename={process.env.PUBLIC_URL + "/"}>
 			<Navbar></Navbar>
