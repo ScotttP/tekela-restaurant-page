@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
 	return (
-		<div id="aboutUs">
+		<section id="aboutUs">
 			<div id="contentDiv">
 				<h1>About Us</h1>
 				<p>
@@ -19,7 +19,7 @@ const AboutUs = () => {
 					placerat ac dapibus at, imperdiet at mi.
 				</p>
 			</div>
-		</div>
+		</section>
 	);
 };
 

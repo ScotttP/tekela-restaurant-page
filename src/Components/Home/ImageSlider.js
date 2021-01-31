@@ -12,7 +12,7 @@ const ImageSlider = () => {
 	// }, []);
 
 	return (
-		<div id="imageSlider">
+		<section id="imageSlider">
 			<div id="linkDiv">
 				<h2>View Our Menus</h2>
 				<div id="buttonDiv">
@@ -28,7 +28,7 @@ const ImageSlider = () => {
 					</Link>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
