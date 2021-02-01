@@ -6,6 +6,7 @@ const Contact = () => {
 	};
 	return (
 		<div id="contactFormDiv">
+			<div id="imageDiv"></div>
 			<form id="contactForm" onSubmit={submitContactForm}>
 				<h3>Contact Us</h3>
 				<label htmlFor="name">
@@ -25,7 +26,9 @@ const Contact = () => {
 					Message:
 					<textarea id="message" type="text" required></textarea>
 				</label>
-				<button type="submit">Send</button>
+				<button type="submit">
+					<b>Send</b>
+				</button>
 			</form>
 		</div>
 	);

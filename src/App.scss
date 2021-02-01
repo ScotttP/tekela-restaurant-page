@@ -3,6 +3,8 @@
 $navbar-background-color: #242121;
 $navbar-hover-color: #3f3939;
 $navbar-hover-color2: #75da23;
+$button-color: #d68426;
+$button-color-hover: #b36e1f;
 $navbar-text-color: #fff;
 $navbar-font-size: 1.2em;
 $transition-hover: 0.3s;
@@ -218,7 +220,7 @@ $breakpoint-tablet: 768px;
 					height: fit-content;
 					min-height: 40px;
 					font-weight: 200px;
-					background-color: #d68426;
+					background-color: $button-color;
 					color: $navbar-text-color;
 					border: none;
 					transition: $transition-hover;
@@ -226,7 +228,7 @@ $breakpoint-tablet: 768px;
 				}
 				button:hover {
 					cursor: pointer;
-					background-color: #b36e1f;
+					background-color: $button-color-hover;
 				}
 			}
 		}
@@ -239,13 +241,13 @@ $breakpoint-tablet: 768px;
 	justify-content: space-evenly;
 	width: 40vw;
 	height: fit-content;
-	min-height: 460px;
+	min-height: 440px;
 	min-width: 310px;
 	max-width: 550px;
 	padding: 30px;
-	// border: 1px solid $navbar-background-color;
-	border-radius: 15px;
-	box-shadow: 0px 0px 13px 6px rgb(133, 132, 132);
+	margin: 5% 0 5% 0;
+	border: 1px solid rgb(107, 106, 106);
+
 	label {
 		display: flex;
 		flex-direction: column;
@@ -266,14 +268,36 @@ $breakpoint-tablet: 768px;
 	h3 {
 		font-family: $special-font, $backup-font;
 	}
+	button {
+		height: fit-content;
+		min-height: 30px;
+		background: $button-color;
+		border: none;
+		color: $navbar-text-color;
+		min-width: 100%;
+		margin-top: 10px;
+	}
+	button:hover {
+		cursor: pointer;
+		background-color: $button-color-hover;
+	}
 }
 #contactFormDiv {
 	height: fit-content;
 	min-height: 80vh;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+
 	align-items: center;
-	background: $navbar-text-color;
+
+	#imageDiv {
+		background: url("https://images.unsplash.com/photo-1557149559-d74af2d38a1a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
+		background-repeat: no-repeat;
+		background-position-y: 70%;
+		background-size: cover;
+		height: 60vh;
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: $breakpoint-tablet) {
