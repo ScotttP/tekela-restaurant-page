@@ -166,10 +166,21 @@ $breakpoint-tablet: 768px;
 		.phoneLink {
 			text-decoration: none;
 			color: $navbar-hover-color2;
+			&:hover {
+				text-decoration: underline;
+				cursor: pointer;
+			}
 		}
 		.addressLink {
 			text-decoration: none;
 			color: $navbar-text-color;
+			&:hover {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+		}
+		p {
+			width: fit-content;
 		}
 	}
 }
@@ -250,6 +261,11 @@ $breakpoint-tablet: 768px;
 				font-family: $special-font;
 				font-size: 55px;
 			}
+			@media screen and (max-width: $breakpoint-tablet) {
+				#viewMenusHeader {
+					font-size: 35px;
+				}
+			}
 		}
 	}
 }
@@ -325,6 +341,11 @@ $breakpoint-tablet: 768px;
 		font-size: 80px;
 		font-family: $special-font;
 		color: $navbar-text-color;
+	}
+	@media screen and (max-width: $breakpoint-tablet) {
+		#contactHeader {
+			font-size: 55px;
+		}
 	}
 }
 
