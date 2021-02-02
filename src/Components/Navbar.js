@@ -13,7 +13,7 @@ const Navbar = () => {
 		<nav id="navbarContainer">
 			<div id="logoAndToggleDiv">
 				<Link to="/Home" id="logo">
-					Tékēla
+					tékēla
 				</Link>
 				<span
 					className="navbarToggle"

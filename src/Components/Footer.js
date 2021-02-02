@@ -8,13 +8,21 @@ const Footer = () => {
 		<div id="footer">
 			<div className="footerDivs" id="sylvaniaLocationContainer">
 				<h3>Sylvania Location</h3>
-				<p>5147 S Main St. Sylvania, OH 43560</p>
-				<p>419-517-0233</p>
+				<a className="addressLink" href="" target="_blank">
+					<p>5147 S Main St. Sylvania, OH 43560</p>
+				</a>
+				<a className="phoneLink" href="tel: 419-517-0233">
+					<p>419-517-0233</p>
+				</a>
 			</div>
 			<div className="footerDivs" id="perrysburgLocationContainer">
 				<h3>Perrysburg Location</h3>
-				<p>25481 N Dixie Hwy, Perrysburg, OH 43551</p>
-				<p>419-874-8800</p>
+				<a className="addressLink" href="" target="_blank">
+					<p>25481 N Dixie Hwy, Perrysburg, OH 43551</p>{" "}
+				</a>
+				<a className="phoneLink" href="tel: 419-874-8800">
+					<p>419-874-8800</p>
+				</a>
 			</div>
 			<div className="footerDivs" id="hoursOfOperation">
 				<h3>Hours</h3>

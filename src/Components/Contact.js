@@ -6,9 +6,11 @@ const Contact = () => {
 	};
 	return (
 		<div id="contactFormDiv">
-			<div id="imageDiv"></div>
+			<div id="imageDiv">
+				<h3 id="contactHeader">Contact Us</h3>
+			</div>
+
 			<form id="contactForm" onSubmit={submitContactForm}>
-				<h3>Contact Us</h3>
 				<label htmlFor="name">
 					Name:
 					<input id="name" type="text" required></input>

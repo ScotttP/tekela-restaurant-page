@@ -139,14 +139,20 @@ $breakpoint-tablet: 768px;
 		flex-direction: column;
 		justify-content: flex-start;
 		min-height: 84px;
+		h3 {
+			text-align: center;
+		}
 
 		#socialsList {
 			display: flex;
+
 			align-items: flex-end;
 			list-style: none;
 			margin-top: 5px;
 			li {
 				margin: 5px;
+				display: flex;
+				align-items: center;
 			}
 			li:hover {
 				cursor: pointer;
@@ -157,6 +163,14 @@ $breakpoint-tablet: 768px;
 		line-height: 1.75em;
 		height: fit-content;
 		margin: 5px;
+		.phoneLink {
+			text-decoration: none;
+			color: $navbar-hover-color2;
+		}
+		.addressLink {
+			text-decoration: none;
+			color: $navbar-text-color;
+		}
 	}
 }
 
@@ -205,7 +219,7 @@ $breakpoint-tablet: 768px;
 		#linkDiv {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			align-items: center;
 			color: $navbar-text-color;
 			height: fit-content;
 			min-height: 100px;
@@ -225,11 +239,16 @@ $breakpoint-tablet: 768px;
 					border: none;
 					transition: $transition-hover;
 					border: 1px solid $navbar-text-color;
+					margin: 20px 30px 10px 30px;
 				}
 				button:hover {
 					cursor: pointer;
 					background-color: $button-color-hover;
 				}
+			}
+			#viewMenusHeader {
+				font-family: $special-font;
+				font-size: 55px;
 			}
 		}
 	}
@@ -245,7 +264,7 @@ $breakpoint-tablet: 768px;
 	min-width: 310px;
 	max-width: 550px;
 	padding: 30px;
-	margin: 5% 0 5% 0;
+	margin: 3% 0 3% 0;
 	border: 1px solid rgb(107, 106, 106);
 
 	label {
@@ -291,12 +310,21 @@ $breakpoint-tablet: 768px;
 	align-items: center;
 
 	#imageDiv {
-		background: url("https://images.unsplash.com/photo-1557149559-d74af2d38a1a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
+		background: url("./ImagesAndIcons/alcohol.jpeg");
 		background-repeat: no-repeat;
 		background-position-y: 70%;
 		background-size: cover;
 		height: 60vh;
 		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#contactHeader {
+		font-size: 80px;
+		font-family: $special-font;
+		color: $navbar-text-color;
 	}
 }
 

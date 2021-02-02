@@ -14,7 +14,7 @@ const ImageSlider = () => {
 	return (
 		<section id="imageSlider">
 			<div id="linkDiv">
-				<h2>View Our Menus</h2>
+				<h3 id="viewMenusHeader">View Our Menus</h3>
 				<div id="buttonDiv">
 					<Link to="/Food">
 						<button>
