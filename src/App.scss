@@ -353,12 +353,10 @@ html {
 	}
 }
 
-#foodMenuSectionDiv {
-	&.foodMenuSections,
-	&.drinkMenuSections {
-		height: fit-content;
-		min-height: 50vh;
-	}
+.foodMenuSections,
+.drinkMenuSections {
+	height: fit-content;
+	min-height: 50vh;
 }
 
 @media screen and (max-width: $breakpoint-tablet) {

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import uniqid from "uniqid";
 
 const SectionNavbar = (props) => {
 	const [sections, setSections] = useState([]);
@@ -17,11 +18,17 @@ const SectionNavbar = (props) => {
 
 	const sectionButtonRender = () => {
 		return sections.map((element) => (
-			<a key={`${element.id}Link`} href={`#${element.id}`}>
-				<button key={element.id}>{element.id}</button>
+			<a key={uniqid()} href={`#${element.id}`}>
+				<button key={uniqid()}>{element.id}</button>
 			</a>
 		));
 	};
+
+	function test() {
+		sections.map((element) => {
+			return element.value;
+		});
+	}
 
 	return <div id="sectionNavbar">{sectionButtonRender()}</div>;
 };
