@@ -1,21 +1,13 @@
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home/Home";
-import Food from "./Components/Food";
-import Drink from "./Components/Drink";
+import Food from "./Components/Menu/Food";
+import Drink from "./Components/Menu/Drink";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 
 const App = () => {
-	// window.onscroll = () => {
-	// 	const navbarContainer = document.getElementById("navbarContainer");
-	// 	if (window.pageYOffset >= 65) {
-	// 		navbarContainer.classList.add("sticky");
-	// 	} else {
-	// 		navbarContainer.classList.remove("sticky");
-	// 	}
-	// };
 	return (
 		<Router basename={process.env.PUBLIC_URL + "/"}>
 			<Navbar></Navbar>

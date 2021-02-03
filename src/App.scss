@@ -23,6 +23,10 @@ $breakpoint-tablet: 768px;
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 #navbarContainer {
 	background: $navbar-background-color;
 	height: fit-content;
@@ -346,6 +350,14 @@ $breakpoint-tablet: 768px;
 		#contactHeader {
 			font-size: 55px;
 		}
+	}
+}
+
+#foodMenuSectionDiv {
+	&.foodMenuSections,
+	&.drinkMenuSections {
+		height: fit-content;
+		min-height: 50vh;
 	}
 }
 

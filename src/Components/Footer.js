@@ -17,9 +17,9 @@ const Footer = () => {
 
 		if (
 			/* if we're on iOS, open in Apple Maps */
-			navigator.platform.indexOf("iPhone") != -1 ||
-			navigator.platform.indexOf("iPad") != -1 ||
-			navigator.platform.indexOf("iPod") != -1
+			navigator.platform.indexOf("iPhone") !== -1 ||
+			navigator.platform.indexOf("iPad") !== -1 ||
+			navigator.platform.indexOf("iPod") !== -1
 		)
 			window.open(`maps://maps.google.com/maps?daddr=${lat},${long}&amp;ll=`);
 		/* else use Google */ else
@@ -57,13 +57,18 @@ const Footer = () => {
 				<h3>Follow Us</h3>
 				<ul id="socialsList">
 					<li>
-						<a target="_blank" href="https://www.facebook.com/tekelamexican">
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://www.facebook.com/tekelamexican"
+						>
 							<img src={Facebook} alt="facebook"></img>
 						</a>
 					</li>
 					<li>
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://www.instagram.com/tekelaperrysburg/?hl=en"
 						>
 							<img src={Instagram} alt="Instagram"></img>
@@ -72,6 +77,7 @@ const Footer = () => {
 					<li>
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://twitter.com/intent/follow?original_referer=https%3A//twitter.com/about/resources/buttons&screen_name=tekelacocina&tw_p=followbutton&variant=2.0"
 						>
 							<img src={Twitter} alt="Twitter"></img>
