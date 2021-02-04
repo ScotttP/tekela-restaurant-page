@@ -14,7 +14,7 @@ const SectionNavbar = (props) => {
 				Array.from(document.getElementsByClassName("drinkMenuSections"))
 			);
 		}
-	}, [props.menuType]);
+	}, []);
 
 	const sectionButtonRender = () => {
 		return sections.map((element) => (
@@ -23,12 +23,6 @@ const SectionNavbar = (props) => {
 			</a>
 		));
 	};
-
-	function test() {
-		sections.map((element) => {
-			return element.value;
-		});
-	}
 
 	return <div id="sectionNavbar">{sectionButtonRender()}</div>;
 };
