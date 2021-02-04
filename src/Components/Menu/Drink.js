@@ -1,6 +1,7 @@
 import React from "react";
 import SectionNavbar from "./SectionNavbar";
 import tequila from "../../Data/tequila.js";
+import margaritas from "../../Data/margaritas.js";
 
 const Drink = () => {
 	const items = (subcategory) => {
@@ -10,6 +11,15 @@ const Drink = () => {
 			return tequila.reposados.map((name) => <li>{name}</li>);
 		else if (subcategory === "anejos")
 			return tequila.anejos.map((name) => <li>{name}</li>);
+		else if (subcategory === "reservas")
+			return tequila.reservas.map((name) => <li>{name}</li>);
+		else if (subcategory === "margaritas")
+			return margaritas.map((object) => (
+				<li>
+					<h4>{object.name}</h4>
+					<p>{object.description}</p>
+				</li>
+			));
 	};
 	return (
 		<div id="drinkMenuSection">
@@ -29,10 +39,22 @@ const Drink = () => {
 					<h3>Anejos</h3>
 					{items("anejos")}
 				</ul>
+				<ul>
+					<h3>Reservas</h3>
+					{items("reservas")}
+				</ul>
+				<div>
+					<h2>Flights</h2>
+					<p>Three 1/2 OZ Glasses of Specialty Tequila for Sampling</p>
+					<p>We Recommend Trying One of Two Options:</p>
+					<p>
+						One Brand with Three Ages or One Age with Three Different Brands.
+					</p>
+				</div>
 			</section>
 			<section className="drinkMenuSections" id="Margaritas">
 				<h2>Margaritas</h2>
-				<ul></ul>
+				<ul> {items("margaritas")}</ul>
 			</section>
 			<section className="drinkMenuSections" id="Cocktails" value="Cocktails">
 				<div>

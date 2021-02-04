@@ -19,8 +19,39 @@ const tequila = {
 		"Tres Amigos Blanco",
 		"Casadores Blanco",
 	],
-	reposados: ["Avion Reposado", "Patron Reposado", "Don Julio Reposado"],
-	anejos: ["anejos"],
+	reposados: [
+		"Avion",
+		"Patron",
+		"Don Julio",
+		"Jose Cuervo Especial (Gold)",
+		"Milagro",
+		"Casamigos",
+		"Sauza Hornitos",
+		"Altos",
+		"1800",
+		"Tres Generaciones",
+		"Herradura",
+		"Cabo Wabo",
+		"Tres Amigos",
+		"Casadores",
+	],
+	anejos: [
+		"Avion",
+		"Patron",
+		"Don Julio",
+		"1800",
+		"Tres Generaciones",
+		"Tres Generaciones",
+		"Herradura",
+		"Cabo Wabo",
+
+		"Casadores",
+	],
+	reservas: [
+		"Don Julio 1942",
+		"Gran Patron Burdeos",
+		"Jose Cuervo Reserva De La Familia",
+	],
 };
 
 export default tequila;
