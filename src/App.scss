@@ -29,6 +29,8 @@ html {
 
 #navbarContainer {
 	background: $navbar-background-color;
+
+	width: 100%;
 	height: fit-content;
 	min-height: 60px;
 	color: $navbar-text-color;
@@ -364,6 +366,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	height: fit-content;
 }
 .menu {
 	display: flex;
@@ -371,7 +374,7 @@ html {
 	height: 80vh;
 	width: fit-content;
 	overflow: scroll;
-	margin: 15px 0 15px 0;
+	margin: 25px 0 25px 0;
 }
 
 #foodMenu {
