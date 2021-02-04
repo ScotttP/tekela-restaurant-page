@@ -358,6 +358,27 @@ html {
 	height: fit-content;
 	min-height: 50vh;
 }
+#drinkMenuSectionDiv,
+#foodMenuSectionDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.menu {
+	display: flex;
+	justify-content: center;
+	height: 80vh;
+	width: fit-content;
+	overflow: scroll;
+	margin: 15px 0 15px 0;
+}
+
+#foodMenu {
+	@media screen and (max-width: 628px) {
+		justify-content: flex-start;
+	}
+}
 
 @media screen and (max-width: $breakpoint-tablet) {
 	#footer {

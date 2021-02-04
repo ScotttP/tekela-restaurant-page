@@ -1,29 +1,41 @@
 import React from "react";
 import SectionNavbar from "./SectionNavbar";
-import tequila from "../../Data/tequila.js";
-import margaritas from "../../Data/margaritas.js";
+// import tequila from "../../Data/tequila.js";
+// import margaritas from "../../Data/margaritas.js";
+import drinkMenu from "../../tekela_drink_menu.pdf";
+import { Document, Page } from "react-pdf";
+import { pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Drink = () => {
-	const items = (subcategory) => {
-		if (subcategory === "silvers")
-			return tequila.silvers.map((name) => <li>{name}</li>);
-		else if (subcategory === "reposados")
-			return tequila.reposados.map((name) => <li>{name}</li>);
-		else if (subcategory === "anejos")
-			return tequila.anejos.map((name) => <li>{name}</li>);
-		else if (subcategory === "reservas")
-			return tequila.reservas.map((name) => <li>{name}</li>);
-		else if (subcategory === "margaritas")
-			return margaritas.map((object) => (
-				<li>
-					<h4>{object.name}</h4>
-					<p>{object.description}</p>
-				</li>
-			));
-	};
+	// const items = (subcategory) => {
+	// 	if (subcategory === "silvers")
+	// 		return tequila.silvers.map((name) => <li>{name}</li>);
+	// 	else if (subcategory === "reposados")
+	// 		return tequila.reposados.map((name) => <li>{name}</li>);
+	// 	else if (subcategory === "anejos")
+	// 		return tequila.anejos.map((name) => <li>{name}</li>);
+	// 	else if (subcategory === "reservas")
+	// 		return tequila.reservas.map((name) => <li>{name}</li>);
+	// 	else if (subcategory === "margaritas")
+	// 		return margaritas.map((object) => (
+	// 			<li>
+	// 				<h4>{object.name}</h4>
+	// 				<p>{object.description}</p>
+	// 			</li>
+	// 		));
+	// };
+
 	return (
-		<div id="drinkMenuSection">
-			<SectionNavbar menuType="Drinks"></SectionNavbar>
+		<div id="drinkMenuSectionDiv">
+			<div className="menu">
+				<Document file={drinkMenu} loading={"loading..."}>
+					{[1, 2, 3, 4, 5, 6, 7, 8].map((page) => (
+						<Page scale={1.5} pageNumber={page} loading={""} />
+					))}
+				</Document>
+			</div>
+			{/* <SectionNavbar menuType="Drinks"></SectionNavbar>
 
 			<section className="drinkMenuSections" id="Tequila">
 				<h2>Tequila</h2>
@@ -108,7 +120,7 @@ const Drink = () => {
 					<h2>Sangria</h2>
 					<ul></ul>
 				</div>
-			</section>
+			</section> */}
 		</div>
 	);
 };
