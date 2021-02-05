@@ -1,12 +1,5 @@
 import React, { useState, useLayoutEffect, Suspense, lazy } from "react";
-// import foodMenu from "../../tekela_dinner_menu.pdf";
-// import { Document, Page } from "react-pdf";
-// import { pdfjs } from "react-pdf";
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
-// const Document = lazy(() => import("react-pdf"));
-// const Page = lazy(() => import("react-pdf"));
-
+import foodMenu from "../../tekela-dinner-menu-compressed.pdf";
 const PDF = lazy(() => import("../PDF"));
 
 const Food = () => {
@@ -23,8 +16,8 @@ const Food = () => {
 	return (
 		<div id="foodMenuSectionDiv">
 			<div className="menu" id="foodMenu">
-				<Suspense fallback={<div>loading....</div>}>
-					<PDF scale={scale}></PDF>
+				<Suspense fallback={<div className="menu"></div>}>
+					<PDF scale={scale} menu={foodMenu} menuType="food"></PDF>
 				</Suspense>
 			</div>
 		</div>

@@ -1,8 +1,6 @@
-import React, { useState, useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect, Suspense, lazy } from "react";
 import drinkMenu from "../../tekela-drink-menu-compressed.pdf";
-import { Document, Page } from "react-pdf";
-import { pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+const PDF = lazy(() => import("../PDF"));
 
 const Drink = () => {
 	const [scale, setScale] = useState(1);
@@ -16,11 +14,9 @@ const Drink = () => {
 	return (
 		<div id="drinkMenuSectionDiv">
 			<div className="menu" id="drinkMenu">
-				<Document file={drinkMenu} loading={"loading..."}>
-					{[1, 2, 3, 4, 5, 6, 7, 8].map((page) => (
-						<Page key={page} scale={scale} pageNumber={page} loading={""} />
-					))}
-				</Document>
+				<Suspense fallback={<div>loading....</div>}>
+					<PDF scale={scale} menu={drinkMenu} menuType="drinks"></PDF>
+				</Suspense>
 			</div>
 		</div>
 	);

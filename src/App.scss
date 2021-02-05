@@ -6,6 +6,7 @@ $navbar-hover-color2: #75da23;
 $button-color: #d68426;
 $button-color-hover: #b36e1f;
 $navbar-text-color: #fff;
+$background-color: #ffffff;
 $navbar-font-size: 1.2em;
 $transition-hover: 0.3s;
 $special-font: "Architects Daughter";
@@ -25,6 +26,12 @@ $breakpoint-tablet: 768px;
 
 html {
 	scroll-behavior: smooth;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
 }
 
 #navbarContainer {
@@ -363,11 +370,14 @@ html {
 #drinkMenuSectionDiv,
 #foodMenuSectionDiv {
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: fit-content;
 	min-height: 828px;
+	margin-top: 110px;
+	background: $background-color;
 }
 .menu {
 	display: flex;

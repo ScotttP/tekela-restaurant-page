@@ -10,7 +10,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav id="navbarContainer">
+		<header id="navbarContainer">
 			<div id="logoAndToggleDiv">
 				<Link to="/Home" id="logo">
 					tékēla
@@ -44,7 +44,7 @@ const Navbar = () => {
 					</Link>
 				</li>
 			</ul>
-		</nav>
+		</header>
 	);
 };
 
