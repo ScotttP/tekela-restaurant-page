@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/tekela-restaurant-page/static/css/main.df3ff04b.chunk.css",
-    "main.js": "/tekela-restaurant-page/static/js/main.add4eda5.chunk.js",
-    "main.js.map": "/tekela-restaurant-page/static/js/main.add4eda5.chunk.js.map",
-    "runtime-main.js": "/tekela-restaurant-page/static/js/runtime-main.379d2fbd.js",
-    "runtime-main.js.map": "/tekela-restaurant-page/static/js/runtime-main.379d2fbd.js.map",
-    "static/js/2.6a6151a5.chunk.js": "/tekela-restaurant-page/static/js/2.6a6151a5.chunk.js",
-    "static/js/2.6a6151a5.chunk.js.map": "/tekela-restaurant-page/static/js/2.6a6151a5.chunk.js.map",
-    "static/js/3.4fb4cb88.chunk.js": "/tekela-restaurant-page/static/js/3.4fb4cb88.chunk.js",
-    "static/js/3.4fb4cb88.chunk.js.map": "/tekela-restaurant-page/static/js/3.4fb4cb88.chunk.js.map",
+    "main.css": "/tekela-restaurant-page/static/css/main.5528d88c.chunk.css",
+    "main.js": "/tekela-restaurant-page/static/js/main.6fe4cb9f.chunk.js",
+    "main.js.map": "/tekela-restaurant-page/static/js/main.6fe4cb9f.chunk.js.map",
+    "runtime-main.js": "/tekela-restaurant-page/static/js/runtime-main.e598eb40.js",
+    "runtime-main.js.map": "/tekela-restaurant-page/static/js/runtime-main.e598eb40.js.map",
+    "static/js/2.f267d905.chunk.js": "/tekela-restaurant-page/static/js/2.f267d905.chunk.js",
+    "static/js/2.f267d905.chunk.js.map": "/tekela-restaurant-page/static/js/2.f267d905.chunk.js.map",
+    "static/js/3.515d01da.chunk.js": "/tekela-restaurant-page/static/js/3.515d01da.chunk.js",
+    "static/js/3.515d01da.chunk.js.map": "/tekela-restaurant-page/static/js/3.515d01da.chunk.js.map",
+    "static/js/4.f9c6ccd9.chunk.js": "/tekela-restaurant-page/static/js/4.f9c6ccd9.chunk.js",
+    "static/js/4.f9c6ccd9.chunk.js.map": "/tekela-restaurant-page/static/js/4.f9c6ccd9.chunk.js.map",
     "index.html": "/tekela-restaurant-page/index.html",
-    "static/css/main.df3ff04b.chunk.css.map": "/tekela-restaurant-page/static/css/main.df3ff04b.chunk.css.map",
-    "static/js/2.6a6151a5.chunk.js.LICENSE.txt": "/tekela-restaurant-page/static/js/2.6a6151a5.chunk.js.LICENSE.txt",
+    "static/css/main.5528d88c.chunk.css.map": "/tekela-restaurant-page/static/css/main.5528d88c.chunk.css.map",
+    "static/js/2.f267d905.chunk.js.LICENSE.txt": "/tekela-restaurant-page/static/js/2.f267d905.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/tekela-restaurant-page/static/media/tacos-2.6ed1eef9.jpeg",
     "static/media/icons8-facebook.d8ecc4d9.svg": "/tekela-restaurant-page/static/media/icons8-facebook.d8ecc4d9.svg",
     "static/media/icons8-instagram.9e3ad4e1.svg": "/tekela-restaurant-page/static/media/icons8-instagram.9e3ad4e1.svg",
-    "static/media/tekela-dinner-menu-compressed.f9fdbf16.pdf": "/tekela-restaurant-page/static/media/tekela-dinner-menu-compressed.f9fdbf16.pdf",
-    "static/media/tekela-drink-menu-compressed.0bc53e62.pdf": "/tekela-restaurant-page/static/media/tekela-drink-menu-compressed.0bc53e62.pdf"
+    "static/media/tekela-drink-menu-compressed.0bc53e62.pdf": "/tekela-restaurant-page/static/media/tekela-drink-menu-compressed.0bc53e62.pdf",
+    "static/media/tekela_dinner_menu.69bfd5c8.pdf": "/tekela-restaurant-page/static/media/tekela_dinner_menu.69bfd5c8.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.379d2fbd.js",
-    "static/js/2.6a6151a5.chunk.js",
-    "static/css/main.df3ff04b.chunk.css",
-    "static/js/main.add4eda5.chunk.js"
+    "static/js/runtime-main.e598eb40.js",
+    "static/js/2.f267d905.chunk.js",
+    "static/css/main.5528d88c.chunk.css",
+    "static/js/main.6fe4cb9f.chunk.js"
   ]
 }
