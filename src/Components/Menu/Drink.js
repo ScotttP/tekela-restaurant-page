@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect } from "react";
-import drinkMenu from "../../tekela_drink_menu.pdf";
+import drinkMenu from "../../tekela-drink-menu-compressed.pdf";
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -18,7 +18,7 @@ const Drink = () => {
 			<div className="menu" id="drinkMenu">
 				<Document file={drinkMenu} loading={"loading..."}>
 					{[1, 2, 3, 4, 5, 6, 7, 8].map((page) => (
-						<Page scale={scale} pageNumber={page} loading={""} />
+						<Page key={page} scale={scale} pageNumber={page} loading={""} />
 					))}
 				</Document>
 			</div>
