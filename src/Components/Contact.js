@@ -1,16 +1,19 @@
 import React from "react";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
-	const submitContactForm = () => {
-		console.log("submitted form");
+	const submitContactForm = (e) => {
+		e.preventDefault();
+		toast("Your Message Has Been Sent!");
 	};
 	return (
 		<div id="contactFormDiv">
 			<div id="imageDiv">
 				<h3 id="contactHeader">Contact Us</h3>
 			</div>
+			<ToastContainer />
 
-			<form id="contactForm" onSubmit={submitContactForm}>
+			<form id="contactForm" onSubmit={(e) => submitContactForm(e)}>
 				<label htmlFor="name">
 					Name:
 					<input id="name" type="text" required></input>

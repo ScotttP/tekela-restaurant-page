@@ -6,17 +6,14 @@ const AboutUs = () => {
 			<div id="contentDiv">
 				<h1>About Us</h1>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu leo
-					risus. Donec lorem nisi, elementum et tristique quis, aliquet at nibh.
-					Pellentesque habitant morbi tristique senectus et netus et malesuada
-					fames ac turpis egestas. Aliquam eget lectus velit. Lorem ipsum dolor
-					sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in
-					faucibus orci luctus et ultrices posuere cubilia curae; Nulla
-					hendrerit elementum tortor. Proin non semper mauris. Aliquam venenatis
-					ullamcorper felis, et iaculis dolor luctus eu. Proin in congue eros.
-					Integer nisl ex, bibendum eget risus ultricies, tincidunt dictum dui.
-					Sed ut porta elit. Sed ultrices fermentum luctus. Nullam lacus odio,
-					placerat ac dapibus at, imperdiet at mi.
+					Tékela Mexican Cocina y Cantina celebrates the fusion of contemporary
+					and authentic foods of Mexico. Each special menu item is prepared
+					fresh throughout the day and served with our homemade salsas. To
+					complement the range of speciality items, Tékela offers an assortment
+					of margaritas, a wide selection of tequilas, and a complete list of
+					Mexican beers and cocktails. We've created an atmosphere that brings
+					to life the very esscence of all Mexico celebrates including a rich
+					culture, delicious food, and festive gatherings of friends and family.
 				</p>
 			</div>
 		</section>

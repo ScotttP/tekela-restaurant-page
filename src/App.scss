@@ -28,12 +28,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-header {
-	position: fixed;
-	width: 100%;
-	top: 0;
-}
-
 #navbarContainer {
 	background: $navbar-background-color;
 
@@ -163,7 +157,7 @@ header {
 			list-style: none;
 			margin-top: 5px;
 			li {
-				margin: 5px;
+				margin: 8px;
 				display: flex;
 				align-items: center;
 			}
@@ -375,8 +369,6 @@ header {
 	align-items: center;
 	width: 100%;
 	height: fit-content;
-	min-height: 828px;
-	margin-top: 110px;
 	background: $background-color;
 }
 .menu {
