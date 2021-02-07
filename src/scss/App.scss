@@ -393,3 +393,28 @@ html {
 		justify-content: flex-start;
 	}
 }
+#happyHourBanner {
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	div {
+		// position: relative;
+		width: fit-content;
+		overflow: hidden;
+	}
+	h2 {
+		position: absolute;
+		white-space: nowrap;
+		font-size: 2em;
+		animation: animate 15s linear infinite;
+	}
+}
+
+@keyframes animate {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}

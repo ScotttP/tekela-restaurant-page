@@ -16,7 +16,6 @@ const ImageSlider = () => {
 		}
 
 		const interval = setInterval(() => {
-			console.log("setInterval");
 			imageSlider.style.backgroundImage = `url(${images[index]})`;
 			setIndex((prevState) => {
 				if (prevState >= images.length - 1) return 0;
