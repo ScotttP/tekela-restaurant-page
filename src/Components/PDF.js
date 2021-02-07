@@ -12,7 +12,9 @@ const PDF = (props) => {
 
 	useEffect(() => {
 		if (props.menuType === "food") setPagesArray([2, 3, 4, 5, 6, 7]);
-		if (props.menuType === "drinks") setPagesArray([1, 2, 3, 4, 5, 6, 7, 8]);
+		else if (props.menuType === "drinks")
+			setPagesArray([1, 2, 3, 4, 5, 6, 7, 8]);
+		else if (props.menuType === "catering") setPagesArray([2, 1]);
 	}, [props.menu]);
 	return (
 		<section>

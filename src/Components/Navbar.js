@@ -13,7 +13,8 @@ const Navbar = () => {
 		<header id="navbarContainer">
 			<div id="logoAndToggleDiv">
 				<Link to="/Home" id="logo">
-					tékēla
+					<div>tékēla</div>
+					<p>mexican cocina y cantina</p>
 				</Link>
 				<span
 					className="navbarToggle"
@@ -36,6 +37,11 @@ const Navbar = () => {
 				<li>
 					<Link to="/Drinks" className="navbarLinks">
 						Drinks
+					</Link>
+				</li>
+				<li>
+					<Link to="/Catering" className="navbarLinks">
+						Catering
 					</Link>
 				</li>
 				<li>

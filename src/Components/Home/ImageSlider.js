@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import taco1 from "../../ImagesAndIcons/tacos.jpeg";
+import taco2 from "../../ImagesAndIcons/tacos-2.jpeg";
+import alcohol2 from "../../ImagesAndIcons/alcohol-2.jpeg";
+
 const ImageSlider = () => {
-	// useEffect(() => {
-	// 	const interval = setInterval(() => {
-	// 		console.log("move to next image");
-	// 	}, 3000);
-	// 	return () => {
-	// 		clearInterval(interval);
-	// 	};
-	// }, []);
+	const [index, setIndex] = useState(1);
+	const images = [taco1, taco2, alcohol2];
+
+	useEffect(() => {
+		const imageSlider = document.querySelector("#imageSlider");
+		if (imageSlider.style.backgroundImage === "") {
+			imageSlider.style.backgroundImage = `url(${images[0]})`;
+		}
+
+		const interval = setInterval(() => {
+			console.log("setInterval");
+			imageSlider.style.backgroundImage = `url(${images[index]})`;
+			setIndex((prevState) => {
+				if (prevState >= images.length - 1) return 0;
+				else return ++prevState;
+			});
+		}, 5000);
+		return () => {
+			clearInterval(interval);
+		};
+	});
 
 	return (
 		<section id="imageSlider">
@@ -24,6 +41,11 @@ const ImageSlider = () => {
 					<Link to="/Drinks">
 						<button>
 							<b>Drinks</b>
+						</button>
+					</Link>
+					<Link to="/Catering">
+						<button>
+							<b>Catering</b>
 						</button>
 					</Link>
 				</div>

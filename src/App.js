@@ -2,11 +2,12 @@ import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import "./App.scss";
+import "./scss/App.scss";
 import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact";
 import Food from "./Components/Menu/Food";
 import Drink from "./Components/Menu/Drink";
+import Catering from "./Components/Menu/Catering";
 
 const App = () => {
 	return (
@@ -19,6 +20,7 @@ const App = () => {
 
 				<Route exact path="/Food" component={Food}></Route>
 				<Route exact path="/Drinks" component={Drink}></Route>
+				<Route exact path="/Catering" component={Catering}></Route>
 
 				<Route exact path="/Contact" component={Contact}></Route>
 			</Switch>

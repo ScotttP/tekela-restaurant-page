@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
 	const submitContactForm = (e) => {
 		e.preventDefault();
-		toast("Your Message Has Been Sent!");
+		toast.success("Your Message Has Been Sent!");
 	};
 	return (
 		<div id="contactFormDiv">

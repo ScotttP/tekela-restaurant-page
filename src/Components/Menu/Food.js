@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect, Suspense, lazy } from "react";
 import foodMenu from "../../tekela-dinner-menu-compressed.pdf";
+
 const PDF = lazy(() => import("../PDF"));
 
 const Food = () => {
