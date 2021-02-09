@@ -260,7 +260,7 @@ html {
 					transition: $transition-hover;
 					border: 1px solid $navbar-text-color;
 					margin: 20px 30px 10px 30px;
-					@media screen and (max-width: 350px) {
+					@media screen and (max-width: 375px) {
 						margin: 10px 15px 10px 15px;
 					}
 				}
@@ -396,25 +396,23 @@ html {
 #happyHourBanner {
 	width: 100%;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	overflow: hidden;
-	div {
-		// position: relative;
-		width: fit-content;
-		overflow: hidden;
-	}
-	h2 {
-		position: absolute;
-		white-space: nowrap;
-		font-size: 2em;
-		animation: animate 15s linear infinite;
-	}
-}
+	padding: 2%;
+	background-color: #d68426c9;
+	font-family: $special-font;
 
-@keyframes animate {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-100%);
+	h2 {
+		font-size: 1.5em;
+		@media screen and (max-width: 880px) {
+			font-size: 1.2em;
+		}
+		@media screen and (max-width: 705px) {
+			font-size: 0.8em;
+		}
+		@media screen and (max-width: 482px) {
+			text-align: center;
+		}
 	}
 }

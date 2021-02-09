@@ -6,19 +6,12 @@ const Home = () => {
 	return (
 		<div id="homepage">
 			<ImageSlider></ImageSlider>
+
 			<section id="happyHourBanner">
-				<div>
-					<h2>
-						Happy Hour 3-5:30PM Everyday: Half Off Appetizers & All Alcoholic
-						Drinks!
-					</h2>
-				</div>
-				<div>
-					<h2>
-						Happy Hour 3-5:30PM Everyday: Half Off Appetizers & All Alcoholic
-						Drinks!
-					</h2>
-				</div>
+				<h2>
+					Happy Hour 3-5:30PM Everyday: Half Off Appetizers & All Alcoholic
+					Drinks!
+				</h2>
 			</section>
 			<AboutUs></AboutUs>
 		</div>
