@@ -21,7 +21,7 @@ const PDF = (props) => {
 			<Document
 				file={props.menu}
 				options={{ workerSrc: "/pdf.worker.js" }}
-				onLoadError={() => alert("looks like an error occured")}
+				onLoadError={(error) => alert()}
 				onSourceError={() =>
 					alert(
 						"Looks like there was a source error...refresh the page and try again."
